@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Agencetwogether\TermsConditions\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class TermsConditionsCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'terms-conditions';
 
     public $description = 'My command';
 
