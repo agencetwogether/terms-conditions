@@ -17,24 +17,24 @@ class TermsConditionsPlugin implements Plugin
 
     protected bool $showLogoPageAcceptTerms = true;
 
-    protected string|bool|null $titlePageAcceptTerms = '';
+    protected string | bool | null $titlePageAcceptTerms = '';
 
-    protected string|bool|null|HtmlString $headingPageAcceptTerms = null;
+    protected string | bool | null | HtmlString $headingPageAcceptTerms = null;
 
-    protected string|bool|null|HtmlString $subHeadingPageAcceptTerms = null;
+    protected string | bool | null | HtmlString $subHeadingPageAcceptTerms = null;
 
     // Page Show Term
     protected string $pageShowTerms = PageShowTerms::class;
 
     protected bool $registerPageShowTerms = false;
 
-    protected string|bool|null $titlePageShowTerms = '';
+    protected string | bool | null $titlePageShowTerms = '';
 
-    protected string|bool|null|HtmlString $headingPageShowTerms = null;
+    protected string | bool | null | HtmlString $headingPageShowTerms = null;
 
-    protected string|bool|null|HtmlString $subHeadingPageShowTerms = null;
+    protected string | bool | null | HtmlString $subHeadingPageShowTerms = null;
 
-    protected string|bool|null|HtmlString $navigationLabelPageShowTerms = null;
+    protected string | bool | null | HtmlString $navigationLabelPageShowTerms = null;
 
     // Page Show Term
     public function getSlugPageShowTerms(): string
@@ -46,7 +46,7 @@ class TermsConditionsPlugin implements Plugin
         return config('terms-conditions.navigation.pages.show_terms.slug');
     }
 
-    public function titlePageShowTerms(string|bool|null $titlePageShowTerms): static
+    public function titlePageShowTerms(string | bool | null $titlePageShowTerms): static
     {
         $this->titlePageShowTerms = $titlePageShowTerms;
 
@@ -62,14 +62,14 @@ class TermsConditionsPlugin implements Plugin
         return __('terms-conditions::terms-conditions.pages.show_terms.title');
     }
 
-    public function headingPageShowTerms(string|bool|null|HtmlString $headingPageShowTerms): static
+    public function headingPageShowTerms(string | bool | null | HtmlString $headingPageShowTerms): static
     {
         $this->headingPageShowTerms = $headingPageShowTerms;
 
         return $this;
     }
 
-    public function getHeadingPageShowTerms(): string|HtmlString|null
+    public function getHeadingPageShowTerms(): string | HtmlString | null
     {
         if (filled($this->headingPageShowTerms)) {
             return $this->headingPageShowTerms;
@@ -78,14 +78,14 @@ class TermsConditionsPlugin implements Plugin
         return __('terms-conditions::terms-conditions.pages.show_terms.heading');
     }
 
-    public function subHeadingPageShowTerms(string|bool|null|HtmlString $subHeadingPageShowTerms): static
+    public function subHeadingPageShowTerms(string | bool | null | HtmlString $subHeadingPageShowTerms): static
     {
         $this->subHeadingPageShowTerms = $subHeadingPageShowTerms;
 
         return $this;
     }
 
-    public function getSubHeadingPageShowTerms(): string|HtmlString|null
+    public function getSubHeadingPageShowTerms(): string | HtmlString | null
     {
         if (filled($this->subHeadingPageShowTerms)) {
             return $this->subHeadingPageShowTerms;
@@ -94,14 +94,14 @@ class TermsConditionsPlugin implements Plugin
         return __('terms-conditions::terms-conditions.pages.show_terms.sub_heading');
     }
 
-    public function navigationLabelPageShowTerms(string|bool|null|HtmlString $navigationLabelPageShowTerms): static
+    public function navigationLabelPageShowTerms(string | bool | null | HtmlString $navigationLabelPageShowTerms): static
     {
         $this->navigationLabelPageShowTerms = $navigationLabelPageShowTerms;
 
         return $this;
     }
 
-    public function getNavigationLabelPageShowTerms(): string|HtmlString|null
+    public function getNavigationLabelPageShowTerms(): string | HtmlString | null
     {
         if (filled($this->navigationLabelPageShowTerms)) {
             return $this->navigationLabelPageShowTerms;
@@ -174,7 +174,7 @@ class TermsConditionsPlugin implements Plugin
         return $this->showLogoPageAcceptTerms;
     }
 
-    public function titlePageAcceptTerms(string|bool|null $titlePageAcceptTerms): static
+    public function titlePageAcceptTerms(string | bool | null $titlePageAcceptTerms): static
     {
         $this->titlePageAcceptTerms = $titlePageAcceptTerms;
 
@@ -190,14 +190,14 @@ class TermsConditionsPlugin implements Plugin
         return __('terms-conditions::terms-conditions.pages.accept_terms.title');
     }
 
-    public function headingPageAcceptTerms(string|bool|null|HtmlString $headingPageAcceptTerms): static
+    public function headingPageAcceptTerms(string | bool | null | HtmlString $headingPageAcceptTerms): static
     {
         $this->headingPageAcceptTerms = $headingPageAcceptTerms;
 
         return $this;
     }
 
-    public function getHeadingPageAcceptTerms(): string|HtmlString|null
+    public function getHeadingPageAcceptTerms(): string | HtmlString | null
     {
         if (filled($this->headingPageAcceptTerms)) {
             return $this->headingPageAcceptTerms;
@@ -206,14 +206,14 @@ class TermsConditionsPlugin implements Plugin
         return __('terms-conditions::terms-conditions.pages.accept_terms.heading');
     }
 
-    public function subHeadingPageAcceptTerms(string|bool|null|HtmlString $subHeadingPageAcceptTerms): static
+    public function subHeadingPageAcceptTerms(string | bool | null | HtmlString $subHeadingPageAcceptTerms): static
     {
         $this->subHeadingPageAcceptTerms = $subHeadingPageAcceptTerms;
 
         return $this;
     }
 
-    public function getSubHeadingPageAcceptTerms(): string|HtmlString|null
+    public function getSubHeadingPageAcceptTerms(): string | HtmlString | null
     {
         if (filled($this->subHeadingPageAcceptTerms)) {
             return $this->subHeadingPageAcceptTerms;

@@ -33,7 +33,7 @@ class PageShowTerms extends Page
         return TermsConditionsPlugin::get()->getHeadingPageShowTerms();
     }
 
-    public function getSubheading(): Htmlable|string|null
+    public function getSubheading(): Htmlable | string | null
     {
         return TermsConditionsPlugin::get()->getSubHeadingPageShowTerms();
     }

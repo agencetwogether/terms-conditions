@@ -11,7 +11,7 @@ Route::name('filament.')->group(function () {
 
             Route::domain($domain)
                 ->middleware($panel->getMiddleware())
-                ->name($panel->getId().'.')
+                ->name($panel->getId() . '.')
                 ->prefix($panel->getPath())
                 ->group(function () use ($panel) {
                     if ($panel->hasPlugin('terms-conditions')) {

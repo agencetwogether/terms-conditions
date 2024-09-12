@@ -45,7 +45,7 @@ class TermResource extends Resource
         return config('terms-conditions.navigation.resources.term_resource.sort');
     }
 
-    public static function getNavigationIcon(): string|Htmlable|null
+    public static function getNavigationIcon(): string | Htmlable | null
     {
         return config('terms-conditions.navigation.resources.term_resource.icon');
     }
@@ -127,7 +127,7 @@ class TermResource extends Resource
                     Tables\Actions\ReplicateAction::make()
                         ->excludeAttributes(['published_at', 'is_published'])
                         ->beforeReplicaSaved(function (Model $replica) {
-                            $replica->name = __('terms-conditions::terms-conditions.general.copy').' '.$replica->name;
+                            $replica->name = __('terms-conditions::terms-conditions.general.copy') . ' ' . $replica->name;
                         }),
                     Tables\Actions\Action::make('publish')
                         ->label(__('terms-conditions::terms-conditions.resources.term_resource.actions.publish.label'))

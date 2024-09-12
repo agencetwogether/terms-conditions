@@ -107,7 +107,7 @@ class PageAcceptTerms extends SimplePage
         return TermsConditionsPlugin::get()->getHeadingPageAcceptTerms();
     }
 
-    public function getSubheading(): Htmlable|string|null
+    public function getSubheading(): Htmlable | string | null
     {
         return TermsConditionsPlugin::get()->getSubHeadingPageAcceptTerms();
     }

@@ -26,7 +26,8 @@ class UserConsentList extends Component implements HasForms, HasTable
                 User::query()
                     ->withWhereHas('term', function ($query) {
                         $query->where('term_id', $this->record->id);
-                    }))
+                    })
+            )
             ->columns([
                 TextColumn::make('full_name')
                     ->label(__('terms-conditions::terms-conditions.resources.infolist.user.label'))
